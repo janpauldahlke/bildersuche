@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderModule } from 'src/components/header/header.module';
+import { SearchModule } from 'src/components/search/search.module';
+import { OptionsModule } from 'src/components/options/options.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { HeaderModule } from 'src/components/header/header.module';
 
     //own
     HeaderModule,
+    SearchModule,
+    OptionsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
