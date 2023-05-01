@@ -1,6 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, catchError, from, map, tap } from 'rxjs';
+import { Observable, map, tap } from 'rxjs';
+
+export interface IResults {
+  hits: IHits[],
+  total: number,
+  totalHits: number
+}
 
 export interface IHits {
   id: string,
