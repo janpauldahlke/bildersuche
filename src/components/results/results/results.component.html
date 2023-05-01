@@ -1,8 +1,14 @@
 
 <section>
-  
   <ng-container *ngIf="query.length > 1">
-    <span> You searched for : {{query}}</span>
+    <span> You revieved total hits : {{results.total}}</span> <br />
+    
+    <div class="image-list" fxLayout="row">
+      <ng-container *ngFor="let image of results.hits">
+        <!-- TODO: refactor this into its own component-->
+        <span>{{image | json}}</span>
+      </ng-container>
+    </div>
+    
   </ng-container>
-  
 </section>
