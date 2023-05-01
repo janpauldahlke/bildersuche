@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderModule } from 'src/components/header/header.module';
 import { SearchModule } from 'src/components/search/search.module';
 import { OptionsModule } from 'src/components/options/options.module';
+import { ResultsModule } from 'src/components/results/results.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { OptionsModule } from 'src/components/options/options.module';
     //own
     HeaderModule,
     SearchModule,
-    OptionsModule
+    OptionsModule,
+    ResultsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,10 +1,8 @@
 <section class="searchForm">
-  <form [formGroup]="searchForm" (ngSubmit)="searchImages()">
+  <form [formGroup]="searchForm" (ngSubmit)="emitQuery($event)">
     <mat-form-field class="searchForm">
       <mat-label >searchTerm: </mat-label>
       <input matInput id="searchTerm" type="text" formControlName="searchTerm" />
-      <mat-error *ngIf="isError">
-        searchTerm is <strong>required</strong></mat-error>
     </mat-form-field>
   </form> 
 </section>

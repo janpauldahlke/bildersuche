@@ -10,6 +10,9 @@ import { ResultsComponent } from './results/results.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    ResultsComponent
   ]
 })
 export class ResultsModule { }

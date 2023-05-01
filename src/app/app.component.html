@@ -1,7 +1,6 @@
-
-
 <app-header></app-header>
-<!--app-options></app-options-->
-<app-search></app-search>
+<app-options></app-options>
+<app-search (query)="propagateQuery($event)"></app-search>
+<app-results [query]="query"></app-results>
 
 <!--router-outlet></router-outlet-->

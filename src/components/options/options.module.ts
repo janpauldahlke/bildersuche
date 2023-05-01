@@ -10,6 +10,9 @@ import { OptionsComponent } from './options/options.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    OptionsComponent,
   ]
 })
 export class OptionsModule { }

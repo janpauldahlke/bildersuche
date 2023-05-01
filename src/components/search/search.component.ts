@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -8,29 +8,29 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class SearchComponent {
 
+
+  @Output() query = new EventEmitter<string>();
   isError = false;
   searchForm = new FormGroup({
     searchTerm: new FormControl('')
   })
 
   constructor() { }
-
-  ngOnInit() {
-    this.isSearchTermValid();
-  }
+  ngOnInit() { }
 
   searchImages() {
-    console.log(this.searchTerm())
+    if (this.searchTerm) {
+      this.query.emit(this.searchTerm)
+    }
   }
 
-  searchTerm() {
+  emitQuery(event: any) {
+    if (this.searchTerm) {
+      this.query.emit(this.searchTerm);
+    }
+  }
+
+  get searchTerm() {
     return this.searchForm.controls.searchTerm.value;
   }
-
-  isSearchTermValid() {
-    this.searchForm.valueChanges.subscribe((formSubscription) => {
-      console.log(formSubscription)
-    })
-  }
-
 }
