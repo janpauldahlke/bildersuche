@@ -1,27 +1,17 @@
-# Bildersuche
+###Bildersuche
+####Aufgabenstellung:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+Dauer: Ca 3-4 Stunden.
 
-## Development server
+Es soll eine kleine Webanwendung gebaut werden. Die Technologie ist frei wählbar. Die Webanwendung soll über einen Webserver verfügbar sein, der gerne auf einem lokalen Entwicklungsrechner laufen kann. Es reicht keine lokale Datei, die vom Browser geladen wird.
+Nach Eingabe eines Suchbegriffs in der Anwendung sollen mehrere Bilder als Suchergebnis angezeigt werden.
+Wenn z.B. nach "Obama" gesucht wird, sollen Bilder von Obama angezeigt werden.
+Die Bilder sollen in mehreren Spalten oder als Liste angezeigt werden.
+Bei Klick auf ein Bild sollen auf einem weiteren Screen ein paar beliebige Details zum Bild angezeigt werden (z.B. Höhe, Breite, Autor, Datum).
+Als Backend soll eine Bildersuchservice mit einer REST Schnittstelle angebunden werden. Auswahl:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+https://docs.microsoft.com/en-us/azure/cognitive-services/bing-image-search/
+https://pixabay.com/api/docs/
+etc.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Zu der Arbeitsprobe gehört auch eine gute Präsentation der Ergebnisse. Diese sollte wie bei einem Zwischenergebnis vor dem Kunden oder den Kollegen des Projektteams durchgeführt werden.
