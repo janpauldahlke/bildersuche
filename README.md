@@ -1,5 +1,12 @@
-###Bildersuche
-####Aufgabenstellung:
+### Bildersuche
+
+####
+* `npm run start` to run local development server 
+  * open `localhost:4200` on your browser
+* `npm run build` to produce bundle that is deployable
+
+
+#### Aufgabenstellung:
 
 Dauer: Ca 3-4 Stunden.
 
