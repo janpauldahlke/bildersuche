@@ -7,6 +7,9 @@
       <ng-container *ngFor="let image of results.hits">
         <!-- TODO: refactor this into its own component-->
         <span>{{image | json}}</span>
+        <ng-container *ngIf="image">
+          <img src={{image?.previewURL}} height={{image?.previewHeight}} width={{image?.previewWidth}} />
+        </ng-container>
       </ng-container>
     </div>
     

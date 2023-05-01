@@ -1,7 +1,6 @@
 import { Component, Input, SimpleChange } from '@angular/core';
 import { environment } from 'environment';
-import { ResultsService } from '../results.service';
-import { Observable, combineLatest, forkJoin, map, of, switchMap } from 'rxjs';
+import { IHits, ResultsService } from '../results.service';
 
 @Component({
   selector: 'app-results',
@@ -11,7 +10,7 @@ import { Observable, combineLatest, forkJoin, map, of, switchMap } from 'rxjs';
 export class ResultsComponent {
 
   @Input() query: string = '';
-  results: { hits: [], total: number, totalHits: number } = { hits: [], total: 0, totalHits: 0 };
+  results: { hits: IHits[], total: number, totalHits: number } = { hits: [], total: 0, totalHits: 0 };
   uriCreated = false; // prevent intial render by flag
   constructor(private service: ResultsService) { }
 

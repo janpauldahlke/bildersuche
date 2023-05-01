@@ -2,6 +2,31 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, catchError, from, map, tap } from 'rxjs';
 
+export interface IHits {
+  id: string,
+  pageURL: string,
+  type: string,
+  tags: string,
+  previewURL: string,
+  previewWidth: number,
+  previewHeight: number,
+  webformatURL: string,
+  webformatHeight: number,
+  webformatWidth: number,
+  largeImageURL: string,
+  imageWidth: number,
+  imageHeight: number,
+  imageSize: string,
+  views: number,
+  downloads: number,
+  collections: string,
+  likes: number,
+  comments: number,
+  user_id: string,
+  user: string,
+  userImageURL: string,
+}
+
 @Injectable({
   providedIn: 'root'
 })
