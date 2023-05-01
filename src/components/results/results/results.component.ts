@@ -1,4 +1,4 @@
-import { Component, Input, SimpleChange } from '@angular/core';
+import { Component, EventEmitter, Input, Output, SimpleChange } from '@angular/core';
 import { environment } from 'environment';
 import { IHits, IResults, ResultsService } from '../results.service';
 
@@ -8,17 +8,15 @@ import { IHits, IResults, ResultsService } from '../results.service';
   styleUrls: ['./results.component.scss']
 })
 export class ResultsComponent {
-
+  @Output() image: EventEmitter<IHits | null> = new EventEmitter();
   @Input() query: string = '';
+
   results: IResults | null = null;
   images_per_page = 50;
   page = 1;
+  display_details = false;
   uriCreated = false; // prevent intial render by flag
   constructor(private service: ResultsService) { }
-
-  ngOnInit() { }
-
-  onOnDestroy() { }
 
   ngOnChanges(changes: { query: SimpleChange }) {
     if (changes.query.previousValue !== changes.query.currentValue) {
@@ -48,5 +46,9 @@ export class ResultsComponent {
   nextPage() {
     this.page = this.page + 1;
     this.makeRequest();
+  }
+
+  emitImageToLightBox(image: IHits) {
+    this.image.emit(image);
   }
 }

@@ -1,10 +1,17 @@
 .image-list {
   flex-wrap: wrap;
+  align-items: center;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .image-list__item {
-  display: block;
-  // TODO automatically get the height
-  height: 100px;
-  width: 100px;
+  margin: 1rem;
+}
+
+.options {
+  width: 80vw;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  text-align: center;
 }

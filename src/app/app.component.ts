@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { Observable, map, of } from 'rxjs';
+import { IHits } from 'src/components/results/results.service';
 
 @Component({
   selector: 'app-root',
@@ -6,12 +8,22 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bildersuche';
-  @Input() query = '';
 
+  @Input() isLightBoxOpen = false;
+  title = 'Bildersuche mit akquinet';
+  image: IHits | null = null;
+  query = '';
 
-  propagateQuery(query: any) {
+  propagateQuery(query: string) {
     this.query = query;
   }
 
+  propagateImage(image: any) {
+    this.image = image;
+    this.isLightBoxOpen = !this.isLightBoxOpen;
+  }
+
+  toggleBox(ev: boolean) {
+    this.isLightBoxOpen = !ev;
+  }
 }

@@ -1,0 +1,12 @@
+<section>
+  <ng-container *ngIf="image && isVisibleLightbox">
+    <div class="lightbox" (click)="closeBox()">
+      <img
+        class="lightbox__image"
+        src={{image.webformatURL}}
+        height={{image.webformatHeight}}
+        width={{image.webformatWidth}}
+        />
+    </div>
+  </ng-container>
+</section>

@@ -8,6 +8,7 @@ import { HeaderModule } from 'src/components/header/header.module';
 import { SearchModule } from 'src/components/search/search.module';
 import { OptionsModule } from 'src/components/options/options.module';
 import { ResultsModule } from 'src/components/results/results.module';
+import { LightboxModule } from 'src/components/lightbox/lightbox.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ResultsModule } from 'src/components/results/results.module';
     SearchModule,
     OptionsModule,
     ResultsModule,
+    LightboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
