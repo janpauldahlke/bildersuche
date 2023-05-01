@@ -10,11 +10,10 @@
 
 Dauer: Ca 3-4 Stunden.
 
-✓  ~~Es soll eine kleine Webanwendung gebaut werden.~~
-✓  ~~Die Technologie ist frei wählbar.~~
+✓  ~~Es soll eine kleine Webanwendung gebaut werden.~~  
+✓  ~~Die Technologie ist frei wählbar.~~  
 ✓  ~~Die Webanwendung soll über einen Webserver verfügbar sein, der gerne auf einem lokalen Entwicklungsrechner laufen kann. ~~
-✓  ~~Nach Eingabe eines Suchbegriffs in der Anwendung sollen mehrere Bilder als Suchergebnis angezeigt werden.
-Wenn z.B. nach "Obama" gesucht wird, sollen Bilder von Obama angezeigt werden.~~
+✓  ~~Nach Eingabe eines Suchbegriffs in der Anwendung sollen mehrere Bilder als Suchergebnis angezeigt werdenWenn z.B. nach "Obama" gesucht wird, sollen Bilder von Obama angezeigt werden~~
 
 x   Die Bilder sollen in mehreren Spalten oder als Liste angezeigt werden.
 
