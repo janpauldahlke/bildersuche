@@ -1,7 +1,7 @@
 
-<section>
+<section class="main">
 
-  <ng-container *ngIf="results !== null">
+  <ng-container *ngIf="results !== null && results.hits.length > 0">
     <div class="options">
     <span> You revieved total hits : {{results.total}}</span> <br />
     <span> hits per page: {{this.images_per_page}}</span> <br />

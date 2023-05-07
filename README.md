@@ -15,7 +15,7 @@ Dauer: Ca 3-4 Stunden.
 ✓  ~~Die Webanwendung soll über einen Webserver verfügbar sein, der gerne auf einem lokalen Entwicklungsrechner laufen kann. ~~  
 ✓  ~~Nach Eingabe eines Suchbegriffs in der Anwendung sollen mehrere Bilder als Suchergebnis angezeigt werdenWenn z.B. nach "Obama" gesucht wird, sollen Bilder von Obama angezeigt werden~~
 
-x   Die Bilder sollen in mehreren Spalten oder als Liste angezeigt werden.
+✓   ~~Die Bilder sollen in mehreren Spalten oder als Liste angezeigt werden.~~
 
 ✓ ~~Bei Klick auf ein Bild sollen~~ auf einem weiteren Screen ein paar beliebige Details zum Bild angezeigt werden **(z.B. Höhe, Breite, Autor, Datum)**.
 
@@ -26,3 +26,13 @@ x   Die Bilder sollen in mehreren Spalten oder als Liste angezeigt werden.
 * etc.
 
 Zu der Arbeitsprobe gehört auch eine gute Präsentation der Ergebnisse. Diese sollte wie bei einem Zwischenergebnis vor dem Kunden oder den Kollegen des Projektteams durchgeführt werden.
+
+
+---
+### Ausblick 
+* caching der bilder, um sie in der eigenen domain zu haben?
+* loading spinner, wenn die bilder noch nicht geladen sind -> user experience impro
+* besseres styling
+* bessere fehlermeldungen, wenn zB 0 results
+* hover in der lightbox displays the metainfo
+

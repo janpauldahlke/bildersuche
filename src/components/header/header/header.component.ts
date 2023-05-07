@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+
+  share() {
+    alert("you are using share feature now");
+  }
 }
