@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderModule } from 'src/components/header/header.module';
 import { SearchModule } from 'src/components/search/search.module';
-import { OptionsModule } from 'src/components/options/options.module';
 import { ResultsModule } from 'src/components/results/results.module';
 import { LightboxModule } from 'src/components/lightbox/lightbox.module';
 
@@ -18,11 +17,9 @@ import { LightboxModule } from 'src/components/lightbox/lightbox.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
-    //own
+    //own Modules, could be standalone since angular 14 as well
     HeaderModule,
     SearchModule,
-    OptionsModule,
     ResultsModule,
     LightboxModule,
   ],

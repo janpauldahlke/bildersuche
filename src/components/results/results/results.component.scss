@@ -9,9 +9,19 @@
   margin: 1rem;
 }
 
+.is_list  {
+  ul {
+    list-style-type: none;
+  }
+}
+
 .options {
   width: 80vw;
   margin: 0 auto;
   padding-bottom: 2rem;
   text-align: center;
+}
+
+.options_ordering{
+  padding-left: 10vw;
 }

@@ -16,6 +16,7 @@ export class ResultsComponent {
   page = 1;
   display_details = false;
   uriCreated = false; // prevent intial render by flag
+  isRow = true; //row or list
   constructor(private service: ResultsService) { }
 
   ngOnChanges(changes: { query: SimpleChange }) {
@@ -50,5 +51,9 @@ export class ResultsComponent {
 
   emitImageToLightBox(image: IHits) {
     this.image.emit(image);
+  }
+
+  onToggleChange(ev: any) {
+    this.isRow = !this.isRow;
   }
 }
